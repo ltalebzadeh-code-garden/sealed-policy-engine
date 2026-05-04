@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Integration test: claims persisted in PostgreSQL (Testcontainers), mapped to sealed
  * {@link Claim} types, payouts computed with the same production {@link ClaimProcessor} logic.
  */
-@Testcontainers(disabledWithoutDocker = false)
+@Testcontainers(disabledWithoutDocker = true)
 class PolicyPortfolioScenarioIT {
 
     @Container
